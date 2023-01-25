@@ -1,0 +1,133 @@
+{
+	"info": {
+		"_postman_id": "5a01619d-5778-4340-9c77-b5ad574513ba",
+		"name": "Superheroes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "933696"
+	},
+	"item": [
+		{
+			"name": "Superheroes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/superheroes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"superheroes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Superheroes that contain",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/superheroes?descriptorContain=man",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"superheroes"
+					],
+					"query": [
+						{
+							"key": "descriptorContain",
+							"value": "man"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Superhero",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/superheroes/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"superheroes",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Superhero",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Bruce Wayne\",\n    \"prefix\": \"Dark\",\n    \"suffix\": \"Knight\",\n    \"power\": \"Intellect\",\n    \"descriptor\": \"Batman\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/superheroes/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"superheroes",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Superhero",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/superheroes/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"superheroes",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

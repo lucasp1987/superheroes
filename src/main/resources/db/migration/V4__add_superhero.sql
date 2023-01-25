@@ -1,0 +1,1 @@
+INSERT INTO superhero ("descriptor", name, power, prefix, suffix) VALUES ('Hulk', 'Bruce Banner', 'Superhuman Speed', 'The', 'Incredible');
